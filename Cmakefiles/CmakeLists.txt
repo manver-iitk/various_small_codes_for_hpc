@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10.1)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+project(First_project)
+enable_language(CUDA)
+
+add_executable(${PROJECT_NAME} File.cu file2.cu)
+install(TARGETS ${PROJECT_NAME} DESTINATION /mnt/d/Lab_work/Git_codes/various_small_codes_for_hpc/Cmakefiles)

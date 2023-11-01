@@ -1,0 +1,24 @@
+enter gnuplot
+
+
+after that 
+command is 
+
+
+plot "Filename" u x_axis_colom:y_axis_colom w l 
+
+example:  
+plot "nohup.out" u 1:2 w l 
+
+that is 1st coloum is x axis 
+2nd colomn is y axis 
+
+
+
+to plot sum of 2 coloums
+plot "nohup.out" u 1:($4+$2)  w l
+
+
+
+to plot multiplt plots 
+plot "nohup.out" u 1:2 w l , "nohup.out" u 1:5 w l

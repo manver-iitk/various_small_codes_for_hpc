@@ -1,0 +1,1 @@
+cmake -S (source of cmakelistfile) -B (Where to build )
